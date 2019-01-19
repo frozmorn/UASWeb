@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+   <script language='JavaScript'> var message="Function Disabled!"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false") </script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" />
+      <title>Asrama Hotspot</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->  
+      <link rel="stylesheet" href="css/template-style.css">
+      <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'> --> 
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script type="text/javascript" src="js/responsee.js"></script>   
+      <!--[if lt IE 9]> 
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+      <![endif]--> 
+   </head>
+
+   <body class="size-1140">
+    $(if chap-id)
+        <form name="sendin" action="$(link-login-only)" method="post">
+            <input type="hidden" name="username" />
+            <input type="hidden" name="password" />
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" />
+        </form>
+        
+        <script type="text/javascript" src="/md5.js"></script>
+        <script type="text/javascript">
+        <!--
+            function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+            }
+        //-->
+        </script>
+    $(endif)
+      <!-- TOP NAV WITH LOGO -->  
+      <header>
+         <nav>
+            <div class="line">
+               <div class="top-nav">
+                  <div class="s-12 l-3">
+                     <div class="box" style="border-top: solid 0.8em rgba(237,44,0,1.00)"><a href="#"><img src="images/logoomah.jpg" onmousedown="return false;"></a></div>
+                     <div class="box" style="margin-top:5%;">
+                        <h3 style="text-align:center; padding-bottom:5%">Asrama Hotspot</h3>
+                        <form class="customform" name="login" action="$(link-login-only)" method="post"
+					    $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+                        
+                        <input name="username" type="text" value="$(username)" placeholder="User ID" required>
+                        <input name="password" type="password" placeholder="Password" required>
+                        <button type="Submit">Login</button>
+                        </form>
+                        $(if error)<br /><div style="color: #FF8080; font-size: 9px">$(error)</div>$(endif)
+                     </div>
+                  </div>
+                  <p class="nav-text">Menu
+                  </p>
+                  <ul class="top-ul chevron">
+                     
+                     <div class="s-12 l-9">
+                     <div class="right">
+                        	<ul>
+                               <li><a></a></li>
+                               <li><a></a></li>
+                               <li><a></a></li>
+                               
+                            </ul>
+                        </li>
+                        </li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li> 
+                     </div>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section>
+         <!-- CAROUSEL -->  	
+         <div id="carousel">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+               <div class="item">
+                  <img src="img/c.jpg" alt="">      
+                  <div class="carousel-text">
+                     <div class="line">
+                        <div class="s-12 l-9 right">
+                          <h2>Game ON!</h2>
+						   <p>Well Configured Routing Protocol That Makes You Feel Lag Free Experience!</p>
+                        </div>
+                        <div class="s-12 l-9 right">
+                           <p> </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="img/a.jpg" alt="">      
+                  <div class="carousel-text">
+                     <div class="line">
+                        <div class="s-12 l-9 right">
+                           <h2>Enhanced Security</h2>
+                        </div>
+                        <div class="s-12 l-9 right">
+                           <p>With Lots Of Filtering Rules Will Makes You Safe To Go Deeper In Internet</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="img/b.jpg" alt="">      
+                  <div class="carousel-text">
+                     <div class="line">
+                        <div class="s-12 l-9 right">
+                           <h2>Supercharged Connection With Fiber Optic</h2>
+                        </div>
+                        <div class="s-12 l-9 right">
+                           <p>Our Backbone Uses Fiber Optic For Larger Bandwith And Stability
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- FIRST BLOCK --> 	
+         <div id="first-block">
+            <div class="line">
+               <h2></h2>
+               <p class="subtitile">We Provides</p>
+               <div class="margin">
+                  <div class="s-12 l-3 margin-bottom">
+                     <i class="icon-paperplane_ico icon2x"></i>
+                     <h3>Wireles Configuration</h3>
+                     <p></p>
+                  </div>
+                  <div class="s-12 l-3 margin-bottom">
+                     <i class="icon-star icon2x"></i>
+                     <h3>Local Area Network Configuration</h3>
+                     <p></p>
+                  </div>
+                  <div class="s-12 l-3 margin-bottom">
+                     <i class="icon-message icon2x"></i>
+                     <h3>Bandwith Management</h3>
+                     <p></p>
+                  </div>
+                  <div class="s-12 l-3 margin-bottom">
+                     <i class="icon-mail icon2x"></i>
+                     <h3>Firewall and Server Configuration</h3>
+                     <p></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- SECOND BLOCK --> 	
+         <div id="second-block">
+            <div class="line">
+               <div class="margin-bottom">
+                  <div class="margin">
+                     <article class="s-12 l-8 center">
+                        <h1>About Us</h1>
+                        <p class="margin-bottm">We're just not a ordinary admin ....we're certified as the Mikrotik,Cisco, Ubiquiti Partner .... we also provides solution to your wireless network, and hardware solution as the Cisco IT Essentials
+                        </p>
+                        <a class="button s-12 l-4 center" href="http://www.facebook.com/whereismyducks">Read more</a>  			
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- GALLERY --> 	
+         <div id="third-block">
+            <div class="line">
+               <h2>Our Achievements</h2>
+               <p class="subtitile">
+               </p>
+               <div class="margin">
+                  <div class="s-12 l-3">
+                     <img src="img/crs.png" onmousedown="return false;">  					 
+                     <p class="subtitile"><h3>ITE Netriders</h3
+                     ></p>
+                  </div>
+                  <div class="s-12 l-3">
+                     <img src="img/cisco.jpg" onmousedown="return false;">      
+                     <p class="subtitile"><h3>Subnetting </h3
+                     ></p>
+                  </div>
+                  <div class="s-12 l-3">
+                     <img src="img/juniper.png" onmousedown="return false;">      
+                     <p class="subtitile"><h3>Ubiquiti Wireless Admin</h3
+                     ></p>
+                  </div>
+                  <div class="s-12 l-3">
+                     <img src="img/ubiquiti.jpg" onmousedown="return false;">  				 
+                     <p class="subtitile"><h3>Mikrotik</h3
+                     ></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="fourth-block">
+            <div class="line">
+               <div id="owl-demo2" class="owl-carousel owl-theme">
+                  <div class="item">
+                     <h2>Tutorial Konfigurasi Wireless Area</h2>
+                     <p class="s-12 l-8 center"> Tutorial lengkap Konfigurasi wireless, Membuat Hotspot, Membangun Jaringan Point to Point dan Jaringan Point to Multi Point dll
+                     </p>
+                  </div>
+                  <div class="item">
+                     <h2>Tutorial Konfigurasi Firewall</h2>
+                     <p class="s-12 l-8 center">Tutorial Lengkap Konfigurasi Firewall, Filter rule, Mangle, NAT (Network Adress Translation), Layer 7 Protocol dll
+                     </p>
+                  </div>
+                  <div class="item">
+                     <h2>Tutorial Konfigurasi Server Linux</h2>
+                     <p class="s-12 l-8 center"> Tutorial Lengkap Konfigurasi Server Linux, Membangun Email Server, Membangun Web Server, Membangun DNS Server dll
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FOOTER -->   
+      <footer>
+         <div class="line">
+            <div class="s-12 l-12">
+               <p class="right" style="text-align:right">Copyright 2016, Level Two<br>
+				Origin : Indische_Partij<br>
+                Facebook: Julis Alexia Von Riessfeld </p>
+            </div>
+         </div>
+      </footer>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>   
+      <script type="text/javascript">
+         jQuery(document).ready(function($) {  
+           $("#owl-demo").owlCarousel({
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : false,
+         	singleItem:true,
+			transitionStyle : "fadeUp"
+           });
+           $("#owl-demo2").owlCarousel({
+         	slideSpeed : 300,
+         	autoPlay : true,
+         	navigation : false,
+         	pagination : true,
+         	singleItem:true
+           });
+         });	
+          
+      </script> 
+	  <script type="text/javascript">
+        <!--
+          document.login.username.focus();
+        //-->
+      </script>
+   </body>
+</html>

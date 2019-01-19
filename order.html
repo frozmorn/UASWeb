@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 80%;
+}
+
+</style>
+  <title>Form Pemesanan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Form Pre-Order</a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="location.html">Lokasi Toko</a></li>
+                  </ul>
+                </div>
+              </nav>
+<div class="container">
+  <h2>Silahkan isi data diri anda</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Nama lengkap</label>
+      <input type="text" class="form-control" id="name" placeholder="Masukkan nama" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Alamat</label>
+      <input type="address" class="form-control" id="addr" placeholder="Masukkan Alamat" name="adr" required>
+    </div>
+    <div class="form-group">
+            <label for="pwd">Nomor HP</label>
+            <input type="number" class="form-control" id="phone" placeholder="Masukkan nomer hp" name="num" required>
+          </div>
+          <div class="form-group">
+                <label for="pwd">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan Email" name="email" required>
+              </div>
+              <div class="form-group">
+                    <label for="pwd">Kode POS</label>
+                    <input type="number" class="form-control" id="pwd" placeholder="Masukkan kode pos" name="postal" required>
+                  </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+    <div class="container-fluid bg-grey">
+          <br></br>
+          <br></br>
+            <div class="row">
+              <div class="col-sm-5">
+                <p>PT Bulustalan 1 Tbk</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Jalan Bulustalan 1, Semarang Tengah</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +08123456789</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> bulustalan1@oneplus.com</p> 
+              </div>
+              </div>
+            </div>
+          </div>
+</body>
+</html>
